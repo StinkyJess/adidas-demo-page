@@ -7,46 +7,70 @@
      <link href="css/main.css" rel="stylesheet" type="text/css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;300;400;500;700;900&display=block" rel="stylesheet"> 
      <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" type="text/css">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
      <!--<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script> 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>   
     </head>
-    <body> 
+    <body>
+        <nav>
+            <ol>
+                <li><a href="#">PROMO</a>
+    
+                </li>
+                <li>
+                    <a href="#">EXPLORE</a>
+                </li>
+                
+                    <li class="navLogoCentered">
+                        <img class="navLogo" src="images/adidas-logo.svg" alt="Adidas Logo White"/>
+                    </li>
+            
+                <li>
+                    <a href="#">GALLERY</a>
+                </li>
+                <li>
+                    <a href="#">SHOP NOW</a>
+                </li>
+            </ol>
+            
+        </nav> 
         <section class="heroSection">
             <h1 id="heroTitle" style="display: none;">Hero Section</h1>
-            <div id="heroHeadline"
+            <div id="heroHeadline">
                 <h2>A Freak in The Cleats</h2>
                     <h3>The Predator Freak.4 </h3>
                         <h4>Flexible Ground Cleat</h4>
-                <picture id="heroImage">
-                    <img>
+            </div> 
+            <picture id="hero">
+        
+                    <img
+                    sizes="(max-width: 3840px) 100vw, 3840px"
+                    srcset="
+                    images/HeroImage_yvl4s3_c_scale,w_200.png 200w,
+                    images/HeroImage_yvl4s3_c_scale,w_470.png 470w,
+                    images/HeroImage_yvl4s3_c_scale,w_668.png 668w,
+                    images/HeroImage_yvl4s3_c_scale,w_817.png 817w,
+                    images/HeroImage_yvl4s3_c_scale,w_950.png 950w,
+                    images/HeroImage_yvl4s3_c_scale,w_1066.png 1066w,
+                    images/HeroImage_yvl4s3_c_scale,w_1169.png 1169w,
+                    images/HeroImage_yvl4s3_c_scale,w_1265.png 1265w,
+                    HeroImage_yvl4s3_c_scale,w_1355.png 1355w,
+                    HeroImage_yvl4s3_c_scale,w_1400.png 1400w"
+                    src="HeroImage_yvl4s3_c_scale,w_1400.png"
+                    alt="Adidas Shoe Soccer Image">
                 </picture>
-
+           
         
         <div id="hamburgWrapper">
             <div class="menu" id="hamburgTop"></div>
             <div class="menu" id="hamburgMid"></div>
             <div class="menu" id="hamburgBot"></div>
         </div>
-        <nav id="nav">
-        <ol>
-            <li><a href="#">PROMO</a>
-
-            </li>
-            <li>
-                <a href="#">EXPLORE</a>
-            </li>
-            <li>
-                <a href="#">GALLERY</a>
-            </li>
-            <li>
-                <a href="#">SHOP NOW</a>
-            </li>
-        </ol>
-    </nav>
+        
+        
 </section>
 <section id="videoSection">
     <h1 id="videoTitle" style="display: none;">Video Section</h1>
